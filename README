@@ -1,0 +1,4 @@
+This is a quick JQuery plugin to put hidded Konami code on a web site.
+In the future, I'l probably add the Street Fighter II code as well.
+
+My intent it to include a few utility commands to set a new code in order to make this plugin a teeny bit more useful for other projects.
