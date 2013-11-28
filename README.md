@@ -3,7 +3,7 @@
 This is a JQuery plugin to put a hidden code keycode on any website. The default is the classic Konami code for video games made by Konami--most notable, Contra and Teenage Mutant Ninja Turltles. (gotta' love old school games!)
 
 ## Supported Codes
-* Konami: up, up, down, down, left, right, b, a, <enter>
+* Konami: up, up, down, down, left, right, b, a, enter
 
 ### Roadmap
 * Add support for options to be passed in for custom configuration.
