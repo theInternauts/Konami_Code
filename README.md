@@ -23,14 +23,15 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 </script>
 ```
 
-4. To enable the Street Fighter II code *instead* of the Konami Code pass in an object with a key/value pair when you invoke the plugin. ```
+4. To enable the Street Fighter II code *instead* of the Konami Code pass in an object with a key/value pair when you invoke the plugin.
+```html
 <script type="text/javascript">
 	$(document).konami_code({ activeCode: 'SFII' })			
 </script>
 ```
 
 5. To enable your own key sequence add new key/value pair to the object and set the value for the key 'activeCode' to the name of your custom key (just like 'SFII' in the previous example).  Be sure to make your key sequence a string of space seperated integers.
-```
+```html
 <script type="text/javascript">
 	$(document).konami_code({
 		mySequence: '49 50 51 52 53', // 1, 2, 3, 4, 5 
