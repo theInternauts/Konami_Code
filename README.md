@@ -47,7 +47,8 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 
 ## Supported Codes
 + **Konami** --- up, up, down, down, left, right, left, right, b, a
-+ **Capcom Street Fighter II** --- down, r, up, l, y, b, x, a (requires an option object to be passed to the plugin. See: *How To Use*)
++ **Capcom Street Fighter II** --- down, r, up, l, y, b, x, a 
+( requires an option object to be passed to the plugin. See: *How To Use* )
 
 ### Roadmap
 (in no particular order)
