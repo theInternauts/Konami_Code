@@ -12,7 +12,7 @@
       function(e) {
         keys.push( e.keyCode )
               console.log(keys.toString()) 
-              if ( keys.toString().indexOf( settings.konami ) >= 0 ){
+              if ( keys.toString().indexOf( settings[settings.activeCode] ) >= 0 ){
 
                   // do something when the konami code is executed
                   console.log("power up")
