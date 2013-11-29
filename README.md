@@ -3,11 +3,16 @@
 This is a JQuery plugin to put a hidden code keycode on any website. The default is the classic Konami code for video games made by Konami--most notable, Contra and Teenage Mutant Ninja Turltles. (gotta' love old school games!)
 
 ## How to use
-1. **Include the plugin** --- Right now, this plugin assumes you have jQuery included in your HTML document. Use a script tage to include this plugin somewhere in the head tag and **below** your script tage that include the base jQuery library.
-2. **Edit plugin source** --- The *current* default action after unputting the proper key sequence is to output the phrase *"Power up"* in the browswer console and in an alert() popup message.  You should delete or comment out those lines and add your own function there.
-3. **Invoke the plugin** -- In either the document head or in the body include the following snippet to inkoke the plugin and start listing to keystrokes in the background. ```
+1. **Include the plugin** --- Right now, this plugin assumes you have jQuery included in your HTML document. Use a script tag to include this plugin somewhere in the head tag and **below** your script tage that include the base jQuery library.
+2. **Invoke the plugin** --- In either the document head (preferred) or in the body include the following snippet to inkoke the plugin and start listing to keystrokes in the background. ```
 <script type="text/javascript">
 	$(document).konami_code()			
+</script>
+```
+3. **Overide the default behavior** --- The current default action after inputting the proper key sequence is to output the phrase *"Power up"* in the browswer console and in an alert() popup message.  You should specify your own function to run by setting the callback key in an options object. When you invoke the plugin pass in an object with a key/value pair.  The key is 'callback:' and the value should be the name of the function that you want to execute when the proper sequence is typed.```
+<script type="text/javascript">
+	myCallback = function(){ alert('yay!') }
+	$(document).konami_code({ callback: myCallback })			
 </script>
 ```
 4. To enable the Street Fighter II code *instead* of the Konami Code pass in an object with a key/value pair when you invoke the plugin. ```
