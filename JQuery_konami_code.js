@@ -2,12 +2,7 @@
   var keys = []
 
   $.fn.konami_code = function( options ) { 
-    var settings = $.extend({
-      konami: '38,38,40,40,37,39,37,39,66,65',       
-      SFII: '40,82,38,76,89,66,88,65',
-      callback: defaultCallback,
-      activeCode: 'konami'
-    }, options )
+    var settings = $.extend(true, {}, $.fn.konami_code.defaults, options )
 
     $(this).keydown(function(e) {
       keys.push( e.keyCode )
@@ -29,4 +24,11 @@
     console.log("power up")
     alert("power up")      
   }  
+
+  $.fn.konami_code.defaults = {
+    konami: '38,38,40,40,37,39,37,39,66,65',       
+    SFII: '40,82,38,76,89,66,88,65',
+    callback: defaultCallback,
+    activeCode: 'konami'
+  }
 })( jQuery )
