@@ -31,4 +31,4 @@
     callback: defaultCallback,
     activeCode: 'konami'
   }
-})( jQuery )
+})( jQuery , window, document)
