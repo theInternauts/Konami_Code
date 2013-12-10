@@ -60,3 +60,7 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 
 
 Your suggestions, bug fixes, and feature requests are welcome. [email Cricket] (mailto:cricketw@WeAreTheInternauts.com) or submit pull requests whichever you prefer.
+
+
+### In the Wild
+Are you using this plugin?  Let me know and I'll list your site here.
