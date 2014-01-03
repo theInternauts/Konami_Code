@@ -4,10 +4,71 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="jQuery_konami_code.js"></script>
 		<script type="text/javascript">
-			$(document).konami_code()			
+			$(document).konami_code({ callback: turtlePower })
+
+			function turtlePower(){
+				$('#tmnt-stripe').animate({ height:'100%'},2000)
+				$('#tmnt-logo img').animate({ opacity:1 },1000)
+				$('#tmnt-silhouette img').animate({ opacity:1},1000)
+				console.log("Turtle Power!")
+			}			
 		</script>
+		<style>
+			#tmnt-stripe {
+				position: fixed;
+				top: 0px;
+				left: 60%;
+				height: 0%;
+				z-index: -20;
+			}
+
+			#tmnt-stripe span {
+				display: inline-block;
+				width: 60px;
+				height: 100%;
+				border: 0px;
+				padding: 0px;
+				margin: 0px;
+			}
+			#tmnt-stripe span:nth-child(1){
+				background-color: #3498db;
+				border-left: 10px solid #fff;
+			}
+			#tmnt-stripe span:nth-child(2){
+				background-color: #e74c3c;
+			}
+			#tmnt-stripe span:nth-child(3){
+				background-color: #9b59b6;
+			}
+			#tmnt-stripe span:nth-child(4){
+				background-color: #f39c12;
+				border-right: 10px solid #fff;
+			}
+			#tmnt-logo img {
+				display: block;
+				margin: 0px auto;
+				width: 40%;
+				opacity: 0;
+			}
+
+			#tmnt-silhouette img {
+				display: block;
+				margin: 0px auto;
+				width: 30%;
+				/*display: none;*/
+				opacity: 0;
+			}
+		</style>
 	</head>
 	<body>
 		<p><b>Konami Code: </b>up, up, down, down, left, right, left, right, b, a</p> 
+		<div id="tmnt-stripe" class="tmnt">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div id="tmnt-logo"><img src="IMG_TMNT_v2.png" /></div>
+		<div id="tmnt-silhouette"><img src="IMG_TMNT_v1.jpg" /></div>
 	</body>
 </html>
