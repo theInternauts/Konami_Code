@@ -18,7 +18,7 @@
     })
     console.log('konami_code: power on')
     return this
-  }//end $.fn.konami_code()  
+  } //end $.fn.konami_code()  
 
   defaultCallback = function(){
     console.log("power up")
