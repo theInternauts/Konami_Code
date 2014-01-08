@@ -42,7 +42,7 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 
 
 ## Demo
-[Try a bare bones working demo] (http://wearetheinternauts.com/projects/konami-code/)
+[Try a bare bones working demo] (http://goo.gl/jj2EKd)
 
 
 ## Supported Codes
