@@ -9,7 +9,8 @@
       // console.log(keys.toString()) 
       if ( keys.toString().indexOf( settings[settings.activeCode] ) >= 0 ){
         // execute the specified callback function when the activeCode is detected
-        settings.callback.call( this )
+        // if I ever use event triggers I'll need to append the event argument object to the end of settings.arguments
+        settings.callback.apply( settings.scope, settings.arguments )
         // empty the array containing the key sequence entered by the user
         keys = []
       } else if (keys.length >1000) {
@@ -29,6 +30,7 @@
     konami: '38,38,40,40,37,39,37,39,66,65',       
     SFII: '40,82,38,76,89,66,88,65',
     callback: defaultCallback,
-    activeCode: 'konami'
+    activeCode: 'konami',
+    scope: window
   }
 })( jQuery , window, document)
