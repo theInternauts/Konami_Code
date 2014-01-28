@@ -65,6 +65,15 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 </script>
 ```
 
+8. To pass limit the number of times a callback can be executed pass in a "maximum" variable to set the maximum number of possible executions. This number needs to be positive to be of any use.
+```html
+<script type="text/javascript">
+    $(document).konami_code({
+      maximum: 3
+    })
+</script>
+```
+
 
 ## Demo
 * [Try a bare bones working demo] (http://goo.gl/jj2EKd)
