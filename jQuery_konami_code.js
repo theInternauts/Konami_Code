@@ -34,6 +34,7 @@
     SFII: '40,82,38,76,89,66,88,65',
     callback: defaultCallback,
     activeCode: 'konami',
+    maximum: 1000000000000000,
     scope: window
   }
 })( jQuery , window, document)
