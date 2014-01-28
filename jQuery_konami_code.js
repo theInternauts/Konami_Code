@@ -3,14 +3,17 @@
 
   $.fn.konami_code = function( options ) { 
     var settings = $.extend(true, {}, $.fn.konami_code.defaults, options )
-
+    executionCount = 0
     $(this).keydown(function(e) {
-      keys.push( e.keyCode )
+      if(settings.maximum > executionCount){        
+        keys.push( e.keyCode )
+      }
       // console.log(keys.toString()) 
       if ( keys.toString().indexOf( settings[settings.activeCode] ) >= 0 ){
         // execute the specified callback function when the activeCode is detected
         // if I ever use event triggers I'll need to append the event argument object to the end of settings.arguments
         settings.callback.apply( settings.scope, settings.arguments )
+        executionCount++;
         // empty the array containing the key sequence entered by the user
         keys = []
       } else if (keys.length >1000) {
