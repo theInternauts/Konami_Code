@@ -5,12 +5,12 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 ## How to use
 
 ### Summary of all configuration options (all are optional)
-+ **callback:** --- The function name that will be executed when the secret key sequence is pressed
-+ **arguments:** --- An *array* of arguments to be passed into the callback when it is called
-+ **scope:** --- The execution scope of the callback
++ **callback:** --- The function name that will be executed when the secret key sequence is pressed.
++ **arguments:** --- An *array* of arguments to be passed into the callback when it is called.
++ **scope:** --- The execution scope of the callback.
 + **konami:** --- The default key/value pair the contains the secret key sequence. You can define your own sequnce and reference it with the 'activeCode' option.
-+ **activeCode:** --- The name of the options *key* that contains the secret key sequence **(default = 'konami')**
-+ **maximum:** --- The maximum number of times the callback will be executed by the correct key sequence
++ **activeCode:** --- The name of the options *key* that contains the secret key sequence. **(default = 'konami')**
++ **maximum:** --- The maximum number of times the callback will be executed by the correct key sequence.
 
 ### Configuration Details
 1. **Include the plugin** --- Right now, this plugin assumes you have jQuery included in your HTML document. Use a script tag to include this plugin somewhere in the head tag and **below** your script tage that include the base jQuery library.
