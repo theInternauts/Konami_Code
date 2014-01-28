@@ -90,6 +90,7 @@ This is a JQuery plugin to put a hidden code keycode on any website. The default
 + ~~Add support for options to be passed in for custom configuration.~~
 + ~~Add the Capcom Street Fighter II code as a possible default.~~
 + ~~allow for the custom callback's execution scope to be settable~~
++ ~~limit the number of callback executions to a user settable number~~
 + Add a mode/utility that will record any series of keystrokes and return an encoded sequence to make it easier for less technical people to customize this feature for their site
 + mobile support.  Maybe via directional swiping
 + re-tool to trigger a custom event to allow for greater flexibility and unknown use cases.
