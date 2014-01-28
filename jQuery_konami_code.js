@@ -3,7 +3,8 @@
 
   $.fn.konami_code = function( options ) { 
     var settings = $.extend(true, {}, $.fn.konami_code.defaults, options )
-    executionCount = 0
+    var executionCount = 0
+    
     $(this).keydown(function(e) {
       if(settings.maximum > executionCount){        
         keys.push( e.keyCode )
