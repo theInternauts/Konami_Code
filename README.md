@@ -112,3 +112,6 @@ Your suggestions, bug fixes, and feature requests are welcome. [email Cricket] (
 
 ### In the Wild
 Are you using this plugin?  Let me know and I'll list your site here.
+
++ [whatdoyouknowaboutcontra.com] (http://whatdoyouknowaboutcontra.com)
++ [Mileyroids.com] (http://mileyroids.com/)
